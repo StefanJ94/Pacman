@@ -2,6 +2,7 @@ package com.example.awtSample.igra;
 
 import com.example.awtSample.jedinice.Brzina;
 import com.example.awtSample.jedinice.Lokacija;
+import com.example.awtSample.jedinice.Ugao;
 
 public abstract class Neprijatelj extends PokretanObjekat{
     private double snaga = 0;
@@ -9,7 +10,7 @@ public abstract class Neprijatelj extends PokretanObjekat{
 
 
     public Neprijatelj(Lokacija lokacija, String slika, Brzina brzina) {
-        super(lokacija, slika, brzina);
+        super(lokacija, slika, brzina, Ugao.fromDegrees(0));
     }
 
     public double getSnaga() {

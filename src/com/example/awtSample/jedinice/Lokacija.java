@@ -15,4 +15,12 @@ public class Lokacija {
     public Duzina getY() {
         return y;
     }
+
+    public void move(Ugao ugao, Duzina duzina) {
+        // x' = x + duzina * cos(ugao)
+        // y' = y + duzina * sin(ugao)
+        x.add(Duzina.fromMeters(duzina.toMeters() * Math.cos(ugao.toRadians())));
+        y.add(Duzina.fromMeters(duzina.toMeters() * Math.sin(ugao.toRadians())));
+
+    }
 }

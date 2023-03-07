@@ -30,4 +30,7 @@ public class Duzina {
     public void addKilometers(double kilometara) {
         this.metri += kilometara * 1000.;
     }
+    public void add(Duzina put) {
+        put.add(put);
+    }
 }
