@@ -1,4 +1,4 @@
-package com.example.awtSample;
+package com.example.awtSample.jedinice;
 
 public class Brzina {
     private double mps;
@@ -23,11 +23,19 @@ public class Brzina {
         return this.mps * 3.6;
     }
 
-    public void addMetersPerSecond(double mps) {
+   /* public void addMetersPerSecond(double mps) {
         this.mps += mps;
     }
 
     public void addKilometersPerHour(double kmph) {
         this.mps += kmph / 3.6;
+    }*/
+
+    public void add(Brzina brzina) {
+        this.mps += brzina.toMetersPerSecond();
+    }
+
+    public Duzina predjeniPut(Vreme vreme) {
+        return Duzina.fromMeters(this.mps * vreme.toSeconds());
     }
 }

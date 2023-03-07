@@ -1,4 +1,4 @@
-package com.example.awtSample;
+package com.example.awtSample.jedinice;
 
 public class Vreme {
     private double sekunde;
