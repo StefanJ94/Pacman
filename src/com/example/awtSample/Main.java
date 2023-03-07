@@ -30,7 +30,7 @@ public class Main {
                    "Drvo" );
 
         listaObjekataIgre.add(no1);
-        
+
 
 
         /*prikaziPredjeniPut(Brzina.fromKilometersPerHour(110),Vreme.fromMinutes(4));
